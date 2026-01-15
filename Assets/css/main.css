@@ -1,0 +1,39 @@
+@import "/Assets/scss/card.scss";
+
+.custom-card .list-group-item-action:hover,
+.custom-card .list-group-item-action:focus {
+    background-color: transparent;
+}
+
+.custom-card .list-group-item.active {
+    background-color: transparent;
+    color: inherit;
+
+}
+
+.card-footer {
+    background-color: rgb(59, 59, 59);
+    color: aliceblue;
+
+}
+
+
+.card-footer.text {
+    color: aliceblue;
+
+}
+
+.card-header {
+    background-color: rgb(59, 59, 59);
+    
+}
+
+a.nav-link {
+    margin-right: 5px;
+    background-color: rgb(200, 200, 200);
+}
+
+#tab3-image {
+    font-size: 30px;
+    color: white;
+}

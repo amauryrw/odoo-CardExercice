@@ -1,0 +1,64 @@
+@import './variables.scss';
+
+
+.custom-card {
+  width: 600px;
+  border-radius: $card-border-radius;
+  box-shadow: $card-shadow;
+  overflow: hidden;
+
+}
+
+.custom-card .card-heading {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tab-pane.active.image-pane {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.custom-card {
+  .nav-link {
+    margin-right: 5px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: rgb(200, 200, 200);
+
+    &.disabled {
+      background-color: rgb(200, 200, 200);
+    }
+  }
+}
+
+.tab-pane.loading {
+
+  strong {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+}
+
+.spinner-border {
+  width: 4rem;
+  height: 4rem;
+}
+
+#spinner {
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 767.98px) {
+  .image-wrapper {
+    min-height: 200px;
+  }
+  #tab3-image {
+    min-height: 200px;
+  }
+}
