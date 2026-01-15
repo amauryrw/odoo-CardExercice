@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Card Tabs</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <script type="module" crossorigin src="/assets/index-dRqKLe_f.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BD7Ob0IR.css">
+  </head>
+
+  <body>
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+      <div class="card custom-card d-flex flex-column">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab">
+                Tab 1
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab-2" role="tab">
+                Tab 2
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab-3" role="tab">
+                Tab 3
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card-body flex-grow-1 p-0">
+
+          <div class="tab-content h-100">
+
+            <div class="tab-pane fade show active h-100" id="tab-1" role="tabpanel">
+
+              <div class="card-heading">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle text-muted">Card subtitle</h6>
+              </div>
+
+              <div class="row no-gutters h-100">
+
+                <div class="col-12 col-md-6 d-flex">
+                  <div class="list-group w-100" role="tablist">
+                    <a class="list-group-item list-group-item-action active" data-toggle="list" href="#img-blue"
+                      role="tab">
+                      An item
+                    </a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#img-yellow" role="tab">
+                      A second item
+                    </a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#img-black" role="tab">
+                      A third item
+                    </a>
+                  </div>
+                </div>
+
+
+                <div class="col-12 col-md-6">
+                  <div class="image-wrapper h-100">
+
+                    <div class="tab-content h-100">
+
+                      <div class="tab-pane fade show active image-pane bg-primary text-white h-100" id="img-blue"
+                        role="tabpanel">
+                        Pic-1
+                      </div>
+
+                      <div class="tab-pane fade image-pane bg-warning h-100" id="img-yellow" role="tabpanel">
+                        Pic-2
+                      </div>
+
+                      <div class="tab-pane fade image-pane bg-dark text-white h-100" id="img-black" role="tabpanel">
+                        Pic-3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade loading h-100" id="tab-2" role="tabpanel">
+              <div class="d-flex flex-column justify-content-center align-items-center h-100" id="spinner">
+                <strong role="status">Loading...</strong>
+                <div class="spinner-border" aria-hidden="true"></div>
+              </div>
+            </div>
+
+
+            <div class="tab-pane fade h-100" id="tab-3" role="tabpanel">
+              <div class="card h-100">
+                <div class="row no-gutters h-100">
+                  <div class="col-12 col-md-4 bg-danger d-flex align-items-center justify-content-center" id="tab3-image"> IMAGE
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text"> This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer. </p>
+                      <p class="card-text"> <small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          2 days ago
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
